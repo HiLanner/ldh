@@ -17,6 +17,9 @@ header.top{
 	float: left;
 	vertical-align: top;
 }
+.logo img{
+	position: absolute;
+}
 nav.navbar{
 	float: right;
 	vertical-align: top;
@@ -25,7 +28,7 @@ nav.navbar{
 nav.navbar ul li{
 	display: inline-block;
 	width: 65px;
-	line-height: 3.5em;
+	line-height: 3.2em;
 	margin-left: 8px;
 }
 nav.navbar ul li a{
@@ -42,3 +45,5 @@ nav.navbar ul li a:hover{
 nav.navbar ul li{
 
 }
+
+
