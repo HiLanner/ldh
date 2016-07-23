@@ -336,7 +336,18 @@ nav.navbar ul li{
 	-webkit-transform:scale(1.3);
 	z-index:8;
 }
-
+/*part4*/
+.erweima{
+	width: 100%;
+	height: 400px;
+	line-height: 400px;
+	background: url(../img/attend-bg2.png) no-repeat center center;
+	text-align: center;
+}
+.erweima img{
+	height: 50%;
+	vertical-align: middle;
+}
 
 
 
