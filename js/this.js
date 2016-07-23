@@ -35,3 +35,9 @@ var changeName = function(imgThis,changeStr,changedStr){
 	imgThis.setAttribute("src",lg_name);
 	
 };
+var topButton = document.getElementById("return-top");
+topButton.onclick = function(){
+	window.scroll(0,0);
+    var scrolldelay = setTimeout('pageScroll()',100);
+    topButton.style.display="none";
+}
