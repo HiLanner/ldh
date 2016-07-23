@@ -37,7 +37,7 @@ nav.navbar ul li a{
 	text-align: center;
 	width: 100%;
 }
-nav.navbar ul li a:hover{
+nav.navbar ul li a:hover,.active{
 	color: #000;
 	border-bottom: 2px solid #B99A7E;
 
