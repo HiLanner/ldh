@@ -91,14 +91,9 @@ nav.navbar ul li{
 	line-height: 1.5em;
 	
 }
-/*part2部分*/
-/*#part2{
-	height: auto;
-	min-height: 850px;
-}*/
 .part-title{
 	width: 100%;
-	min-height: 200px;
+	min-height: 240px;
 	position: relative;
 }
 .theme{
@@ -123,7 +118,7 @@ nav.navbar ul li{
 .photo-gallery{
 	position: relative;
 	width: 100%;
-	min-height: 620px;
+	min-height: 720px;
 }
 .photo-row{
 	width: 100%;
@@ -199,7 +194,7 @@ nav.navbar ul li{
 	background: #E5E5E5;
 }
 .three-way{
-	min-height: 300px;
+	min-height: 400px;
 }
 .way{
 	width: 33%;
@@ -209,7 +204,6 @@ nav.navbar ul li{
 	text-align: center;
 }
 .the-way{
-	/*position: absolute;*/
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -219,13 +213,19 @@ nav.navbar ul li{
 	margin: auto;
 	text-align: center;
 	color: #6A6A6A;
+	position: relative;
 }
 .border{
-	display: inline;
+	display: inline-block;
 	border: 2px solid #c1c1c1;
 	width: 100px;
 	height: 100px;
 	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
 	transition:1s;
 	-moz-transition:1s;
 	-ms-transition:1s;
@@ -264,12 +264,12 @@ nav.navbar ul li{
 .station{
 	background: url(../img/review-bg-shade.png) no-repeat bottom;
 	width: 100%;
-	height: 400px;
+	height: 500px;
 	position: relative;
 }
 .city{
 	width: 110px;
-	height: 120px;
+	height: 60%;
 	text-align: center;
 	color: #fff;
 	position: absolute;	
@@ -292,31 +292,31 @@ nav.navbar ul li{
 }
 .city1{
 	left: 5%;
-	top: 18%;
+	top: 34%;
 }
 .city2{
 	left: 18%;
-	top: 14%;
+	top: 30%;
 }
 .city3{
 	left: 32%;
-	top:8%;
+	top:24%;
 }
 .city4{
 	left: 47%;
-	top: 10%;
+	top: 28%;
 }
 .city5{
 	left: 62%;
-	top: 16%;
+	top: 32%;
 }
 .city6{
 	left: 78%;
-	top: 14%;
+	top: 30%;
 }
 .city7{
 	left: 92%;
-	top: 0%;
+	top: 10%;
 }
 .some-station{
 	display: none;
@@ -335,8 +335,8 @@ nav.navbar ul li{
 /*part5*/
 .erweima{
 	width: 100%;
-	height: 400px;
-	line-height: 400px;
+	height: 500px;
+	line-height: 500px;
 	background: url(../img/attend-bg2.png) no-repeat center center;
 	text-align: center;
 }
@@ -389,19 +389,21 @@ nav.navbar ul li{
 	background: url(../img/bg.png) center bottom / 100% 100% no-repeat;
 }
 .tel{
-	height: 80px;
+	height: 100px;
+	width: 80%;
+	margin: 0 auto;
 }
 .tel>div{
 	display: inline-block;
-	width: 48%;
 	font-size: 14px;
+	width: 10%;
 }
-.tel-num{
+.tel .tel-num{
 	text-align: right;
-	padding-right: 25px;
+	width: 45%;
 }
-.tel-email{
-	padding-left: 25px;
+.tel .tel-email{
+	width: 45%;
 }
 /*footer*/
 footer{
@@ -441,5 +443,6 @@ footer .foot-bottom{
 	position: fixed;
 	right: 60px;
 	bottom: 80px;
+	display: none;
 	z-index: 111;
 }

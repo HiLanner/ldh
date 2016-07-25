@@ -1,4 +1,4 @@
-window.onload=function(){cityHover();}
+window.onload=function(){cityHover();returnTop()}
 var cityHover=function(){
 	var imgAll = document.querySelectorAll(".city>img");
 	var cityAll = document.querySelectorAll(".city");
@@ -12,8 +12,6 @@ var cityHover=function(){
 		cityAll[i].onmouseleave=function(){
 			var that = this;
 			var cityHover=chooseCity(that);
-			// alert(cityHover);
-			// changeName(cityHover,"lg","sm");
 		};
 	};
 };
@@ -23,7 +21,6 @@ var chooseCity = function(parentTag){
 		(function(arg){
 			if (cityNum[i].nodeName == "IMG") {
 				changeName(cityNum[arg],"lg","sm");
-				// return cityNum[arg];
 			};
 		})(i);
 
@@ -35,3 +32,30 @@ var changeName = function(imgThis,changeStr,changedStr){
 	imgThis.setAttribute("src",lg_name);
 	
 };
+var returnTop = function(){
+    var topButton = document.getElementById("return-top");
+    var getScrollValue = function(){
+    	return document.documentElement.scrollTop||document.body.scrollTop;
+    }
+    var setScrollValue = function(value){
+    	document.documentElement.scrollTop = value;
+    	document.body.scrollTop = value;
+    }
+    window.onscroll = function(){
+    	if (getScrollValue()>0) {
+    		topButton.style.display = "block";
+    	}else{
+    		topButton.style.display = "none";
+    	};
+    }
+
+topButton.onclick = function(){
+    var goTop = setInterval(move,10);
+    function move(){
+    	setScrollValue(getScrollValue()/1.1);
+    	if (getScrollValue()<1) {
+    		clearInterval(goTop);
+    	};
+    }
+}
+}
