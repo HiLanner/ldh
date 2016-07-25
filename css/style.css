@@ -282,6 +282,7 @@ nav.navbar ul li{
 .city>img{
 	display: inline-block;
 	width: 100%;
+	height: 40%;
 }
 .some-station img{
     margin: 15px;

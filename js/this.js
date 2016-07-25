@@ -1,4 +1,4 @@
-window.onload=function(){cityHover();returnTop()}
+window.onload=function(){cityHover();}
 var cityHover=function(){
 	var imgAll = document.querySelectorAll(".city>img");
 	var cityAll = document.querySelectorAll(".city");
@@ -12,6 +12,8 @@ var cityHover=function(){
 		cityAll[i].onmouseleave=function(){
 			var that = this;
 			var cityHover=chooseCity(that);
+			// alert(cityHover);
+			// changeName(cityHover,"lg","sm");
 		};
 	};
 };
@@ -21,6 +23,7 @@ var chooseCity = function(parentTag){
 		(function(arg){
 			if (cityNum[i].nodeName == "IMG") {
 				changeName(cityNum[arg],"lg","sm");
+				// return cityNum[arg];
 			};
 		})(i);
 
